@@ -8,7 +8,7 @@ A modern, responsive landing page template built with Nuxt.js, Vue.js, Tailwind 
 
 ## Preview
 
-![Preview](./public/preview.jpg)
+![Preview](./public/preview.png)
 
 ## Features
 
