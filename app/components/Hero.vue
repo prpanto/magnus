@@ -1,39 +1,22 @@
 <script setup lang="ts">
 import Badge from '@/components/ui/badge/Badge.vue';
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+
+const avatars = [
+  "images/avatars/01.avif",
+  "images/avatars/02.avif",
+  "images/avatars/03.avif",
+  "images/avatars/04.avif",
+]
 </script>
 
 <template>
   <section id="hero" class="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 w-full overflow-hidden">
     <Badge class="py-1 gap-2 rounded-full">
-      <div class="flex -space-x-1.5">
-        <NuxtImg
-          class="ring-background rounded-full ring-1"
-          src="images/avatars/01.avif"
-          width="25"
-          height="25"
-          alt="Avatar 01"
-        />
-        <NuxtImg
-          class="ring-background rounded-full ring-1"
-          src="images/avatars/02.avif"
-          width="25"
-          height="25"
-          alt="Avatar 02"
-        />
-        <NuxtImg
-          class="ring-background rounded-full ring-1"
-          src="images/avatars/03.avif"
-          width="25"
-          height="25"
-          alt="Avatar 03"
-        />
-        <NuxtImg
-          class="ring-background rounded-full ring-1"
-          src="images/avatars/04.avif"
-          width="25"
-          height="25"
-          alt="Avatar 04"
-        />
+      <div class="flex -space-x-2">
+        <Avatar v-for="(avatar, index) in avatars" :key="index" class="ring-1 size-6">
+          <AvatarImage :src="avatar" :alt="`Avatar 0${index}`" class="object-cover" />
+        </Avatar>
       </div>
 
       Trusted by 10k+ people
