@@ -4,7 +4,7 @@ A modern, responsive landing page template built with Nuxt.js, Vue.js, Tailwind 
 
 ## Demo
 
-[Live Demo](magnus-prpanto.vercel.app)
+[Live Demo](http://magnus-prpanto.vercel.app)
 
 ## Preview
 
