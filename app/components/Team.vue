@@ -5,6 +5,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const data = [
   {
@@ -38,13 +39,15 @@ const data = [
     </div>
 
     <div class="flex flex-col md:grid grid-cols-2 gap-4">
-      <Card v-for="item in data" :key="item.name" class="flex justify-center">
+      <Card v-for="team in data" :key="team.name" class="flex justify-center">
         <CardContent class="flex flex-row items-center gap-4">
-          <NuxtImg :src="item.avatar" width="40" height="40" class="rounded-full" />
+          <Avatar>
+            <AvatarImage :src="team.avatar" :alt="team.name" class="object-cover" />
+          </Avatar>
 
           <div class="space-y-2">
-            <CardTitle>{{ item.name }}</CardTitle>
-            <CardDescription>{{ item.major }}</CardDescription>
+            <CardTitle>{{ team.name }}</CardTitle>
+            <CardDescription>{{ team.major }}</CardDescription>
           </div>
         </CardContent>
       </Card>
