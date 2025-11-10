@@ -53,7 +53,7 @@ const onSubmit = form.handleSubmit((values) => {
 
           <FormField v-slot="{ componentField }" name="email">
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Email</FormLabel>
 
               <FormControl>
                 <Input type="text" placeholder="Enter your email" v-bind="componentField" />
@@ -71,7 +71,9 @@ const onSubmit = form.handleSubmit((values) => {
             <FormControl>
               <Textarea
                 placeholder="Ender your message"
+                class="resize-none"
                 v-bind="componentField"
+                rows="8"
               />
             </FormControl>
 
@@ -81,7 +83,7 @@ const onSubmit = form.handleSubmit((values) => {
       </div>
 
       <Button type="submit">
-        Submit
+        Send Message
         <ArrowRight />
       </Button>
     </form>
