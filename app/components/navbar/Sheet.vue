@@ -26,7 +26,7 @@ defineProps<{
       </Button>
     </SheetTrigger>
 
-    <SheetContent  class="px-4 py-2">
+    <SheetContent class="px-4 py-2">
       <Logo />
       <NavbarMenu :navigation orientation="vertical" />
 
