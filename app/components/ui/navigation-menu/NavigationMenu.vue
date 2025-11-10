@@ -27,7 +27,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     data-slot="navigation-menu"
     :data-viewport="viewport"
     v-bind="forwarded"
-    :class="cn('group/navigation-menu relative flex max-w-max items-center justify-center', props.class)"
+    :class="cn('group/navigation-menu relative flex flex-1 max-w-max items-center justify-center', props.class)"
   >
     <slot />
     <NavigationMenuViewport v-if="viewport" />

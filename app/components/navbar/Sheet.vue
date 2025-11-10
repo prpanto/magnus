@@ -28,7 +28,7 @@ defineProps<{
 
     <SheetContent class="px-4 py-2">
       <Logo />
-      <NavbarMenu :navigation orientation="vertical" />
+      <NavbarMenu :navigation orientation="vertical" class="flex-0" />
 
       <div class="mt-4">
         <Button class="w-full flex items-center">
