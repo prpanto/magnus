@@ -82,8 +82,8 @@ const onSubmit = form.handleSubmit((values) => {
         </FormField>
       </div>
 
-      <Button type="submit">
-        Send Message
+      <Button type="submit" class="flex items-center">
+        <span>Send Message</span>
         <ArrowRight />
       </Button>
     </form>
